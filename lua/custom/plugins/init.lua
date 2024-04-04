@@ -2,4 +2,27 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+	{
+		'max397574/better-escape.nvim',
+		config = function()
+			require('better_escape').setup()
+		end,
+	},
+	{
+		'echasnovski/mini.move',
+		opts = {
+			mappings = {
+				left = 'H',
+				right = 'L',
+				down = 'J',
+				up = 'K'
+			}
+		}
+	},
+	{
+		'windwp/nvim-autopairs',
+		event = 'InsertEnter',
+		config = true,
+	},
+}
