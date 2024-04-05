@@ -40,4 +40,11 @@ return {
     end,
   },
   'github/copilot.vim',
+  {
+    'nvim-tree/nvim-tree.lua',
+    config = function()
+      require('nvim-tree').setup()
+      vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Toggle NvimTree' })
+    end,
+  },
 }
