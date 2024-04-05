@@ -22,7 +22,6 @@
 
 --]]
 
-
 -- [[ Basic Settings ]]
 --  See `:help vim.opt`
 
